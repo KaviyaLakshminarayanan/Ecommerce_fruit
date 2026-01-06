@@ -1,0 +1,10 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+$primary-color:black;
+div{
+    height: 100vh;
+    width: 200px;
+    background-image: url('../images/Apple.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
