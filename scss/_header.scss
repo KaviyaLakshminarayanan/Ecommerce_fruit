@@ -1,10 +1,103 @@
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
-$primary-color:black;
-div{
-    height: 100vh;
-    width: 200px;
-    background-image: url('../images/Apple.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+
+$primary-color:#58a611;
+$SmokeWhite:#f7f6f2;
+$DarkRed:#c40607;
+$Plums:#5548a1;
+$Cucumber:#3c5f20;
+$Peaches:#d8502a;
+$Pomogranate:#db3044;
+.logo img{
+    width: 80px;
+
+}
+.leaf img{
+    width: 100px;
+    transition: all 0.3s ease;
+}
+.header{
+    width: 100%;
+    height: 80vh;
+    position: relative;
+}
+// .header:hover .leaf img{
+//     transform: rotate(10deg);
+// }
+.leaf{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    opacity: 0.5;
+    transition: all 0.9s ease;
+    z-index: 1;
+}
+.leaf1{
+    left: 100px;
+}
+.leaf2{
+    left: 100px;
+    bottom: 100px;
+}
+.header:hover .leaf{
+    opacity: 1;
+    transform: scale(1.1);
+}
+.header:hover .leaf1{ 
+    transform: rotate(-120deg);
+}
+.header:hover .leaf2{ 
+    transform: rotate(120deg);
+}
+.leaf3{
+    top: 60%;
+    left: 60%;
+}
+.header:hover .leaf3{
+    transform: rotate(50deg);
+}
+.leaf4{
+    top: 50px;
+    left: 70%;
+}
+.header:hover .leaf4{
+    transform: rotate(-80deg);
+}
+.leaf5{
+    top: 35%;
+    left: 86%;
+}
+.header:hover .leaf5{
+    transform: rotate(180deg);
+}
+.content span img{
+    align-items: center;
+    transition: all 0.6s ease;
+}
+.header:hover .content span img{
+    transform: scale(1.1);
+}
+.header:hover .content-text{
+    transform: scale(1.1);
+}
+.content-text{
+    transition: all 0.6s ease;
+    text-align: center;
+    justify-content: center;
+}
+.content-text h1{
+    font-size: 60px;
+    font-weight: 800;
+    color: $DarkRed;
+}
+.content-text h6{
+    text-align: center;
+    font-size: 20px;
+}
+.content-text button{
+    margin-top: 50px;
+    justify-content: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: $primary-color;
+    border: 2px solid $primary-color;
 }
