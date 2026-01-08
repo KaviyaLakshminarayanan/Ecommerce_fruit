@@ -4,6 +4,7 @@
  * Copyright 2011-2025 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 :root,
 [data-bs-theme=light] {
   --bs-blue: #0d6efd;
@@ -11863,7 +11864,8 @@ textarea.form-control-lg {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "poppoins", sans-serif;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.4s ease;
 }
 
 .logo img {
@@ -11977,6 +11979,144 @@ textarea.form-control-lg {
   border-radius: 5px;
   color: #58a611;
   border: 2px solid #58a611;
+  transition: all 0.5s ease;
+}
+
+.content-text button:hover {
+  background-color: #58a611;
+  color: white;
+}
+
+.Product {
+  width: 19em;
+  height: 15em;
+  padding: 10px;
+  position: relative;
+  transition: all 0.4s;
+}
+
+.Product img {
+  transition: all 0.4s;
+  width: 60%;
+  position: absolute;
+  bottom: -20px;
+  left: 100px;
+  margin-bottom: 10px;
+}
+
+.Plums {
+  background-color: #7160d6;
+  color: #4832c3;
+}
+
+.Plums:hover {
+  background-color: #988be0;
+}
+
+.Plums:hover img {
+  filter: drop-shadow(1px 1px 20px #4832c3);
+  transform: scale(1.1);
+}
+
+.Peaches {
+  background-color: #ea7351;
+  color: #e85228;
+}
+
+.Peaches:hover {
+  background-color: #f59378;
+}
+
+.Peaches:hover img {
+  filter: drop-shadow(1px 1px 20px #e85228);
+  transform: scale(1.1);
+}
+
+.Cucumber {
+  background-color: #5d873b;
+  color: #3d6c17;
+}
+
+.Cucumber:hover {
+  background-color: #7bb74a;
+}
+
+.Cucumber:hover img {
+  filter: drop-shadow(1px 1px 20px #3d6c17);
+  transform: scale(1.1);
+}
+
+.Peaches:hover {
+  background-color: #f59378;
+}
+
+.Peaches:hover img {
+  filter: drop-shadow(1px 1px 20px #e85228);
+  transform: scale(1.1);
+}
+
+.Pomogranate {
+  background-color: #d54052;
+  color: #c21b2f;
+}
+
+.Pomogranate:hover {
+  background-color: #e76877;
+}
+
+.Pomogranate:hover img {
+  filter: drop-shadow(1px 1px 20px #c21b2f);
+  transform: scale(1.1);
+}
+
+.ficon {
+  width: 40px;
+  height: 40px;
+  background-color: #f5f5f5;
+}
+
+.ficon i {
+  font-size: 29px;
+}
+
+.feature-logo {
+  width: 16em;
+  justify-items: center;
+  text-align: center;
+}
+
+.features-item {
+  display: grid;
+  gap: 10px;
+  justify-content: center;
+  grid-template-columns: 20em 25em 20em;
+  grid-template-rows: 10em 10em 10em;
+  grid-template-areas: "box1 box4 box5" "box2 box4 box6" "box3 box4 box7";
+}
+
+.features-item img {
+  width: 100%;
+}
+
+.features-item h5 {
+  color: #58a611;
+}
+
+.SaleNav img {
+  width: 50px;
+  height: 50px;
+  transition: all 0.3s ease;
+}
+
+.SaleNav {
+  display: flex;
+  gap: 50px;
+  justify-self: center;
+}
+
+.SaleNav img:hover {
+  filter: drop-shadow(1px 1px 5px black);
+  transform: scale(1.1);
 }
 
 /*# sourceMappingURL=style.css.map */

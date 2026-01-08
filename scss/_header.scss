@@ -2,10 +2,7 @@
 $primary-color:#58a611;
 $SmokeWhite:#f7f6f2;
 $DarkRed:#c40607;
-$Plums:#5548a1;
-$Cucumber:#3c5f20;
-$Peaches:#d8502a;
-$Pomogranate:#db3044;
+
 .logo img{
     width: 80px;
 
@@ -100,4 +97,9 @@ $Pomogranate:#db3044;
     border-radius: 5px;
     color: $primary-color;
     border: 2px solid $primary-color;
+    transition: all 0.5s ease;
+}
+.content-text button:hover{
+    background-color:$primary-color;
+    color: white;
 }
